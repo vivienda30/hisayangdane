@@ -1,0 +1,80 @@
+body {
+  background: linear-gradient(to bottom, #faaca8, #ddd6f3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+.envelope {
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 700px;
+  max-height: 85%;
+  overflow-y: auto;
+  text-align: center;
+  animation: dropIn 1s ease-in-out;
+}
+
+.letter-header h2 {
+  color: #f67280;
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+#openButton {
+  background-color: #f67280;
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#openButton:hover {
+  background-color: #c06c84;
+}
+
+.letter {
+  text-align: justify;
+  color: #444;
+  margin-top: 25px;
+  font-size: 1.15em;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+.letter p {
+  margin-bottom: 15px;
+}
+
+@keyframes dropIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
